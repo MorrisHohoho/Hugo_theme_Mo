@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+</head>
+
+{{ partial "header.html" . }}
+<body>
+    <div>
+    {{ block "main" . }}{{ end }}
+    </div>
+</body>
+
+</html>

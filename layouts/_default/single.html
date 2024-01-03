@@ -1,3 +1,12 @@
+{{ define "head" }}
+{{ $opts := dict "transpiler" "dartsass" "targetPath" "css/index.css" }}
+{{ with resources.Get "sass/layouts/common.scss" | toCSS $opts | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+{{ end }}
+
+
 {{ define "main" }}
+<p> This is the single template</p>
     {{ .Content }}
 {{ end }}

@@ -84,6 +84,7 @@ hr {
     }
 }
 
+
 // header
 header {
     align-items: center;
@@ -143,6 +144,20 @@ header {
     .header-item-svg{
         width: 0.8em;
         height: 0.8em;
+        
+    }
+
+    .fancy-link{
+        text-decoration: none;
+        background-image: linear-gradient(black, black);
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        background-size: 0 2.5px;
+        transition: background-size 275ms ease-in-out;
+    }
+
+    .fancy-link:hover{
+        background-size: 100% 2.5px;
     }
 }
 

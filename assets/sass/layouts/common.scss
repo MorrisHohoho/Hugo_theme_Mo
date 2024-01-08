@@ -15,6 +15,11 @@ body {
     color: var(--fg);
 }
 
+ol,
+ul {
+  margin-left: $margin;
+}
+
 a {
     text-decoration: none;
 
@@ -144,7 +149,7 @@ header {
     .header-item-svg{
         width: 0.8em;
         height: 0.8em;
-        
+        margin-right: 0.2em;
     }
 
     .fancy-link{

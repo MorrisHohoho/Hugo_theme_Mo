@@ -1,0 +1,15 @@
+
+
+
+    <!-- //player.bilibili.com/player.html: Default player
+    //www.bilibili.com/blackboard/html5mobileplayer.html: Mobile device player -->
+
+<div style="position:relative; padding-bottom:75%; width:100%; height:0">
+
+    <iframe
+        src="//www.bilibili.com/blackboard/html5mobileplayer.html?bvid={{.Get 0 }}&page={{ if .Get 1 }}{{.Get 1}}{{ else }}1{{end}}&autoplay=1&as_wide=1&high_quality=0&danmaku=0&hasMuteButton=1"
+        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"
+        style="position:absolute; height: 100%; width: 100%;">
+    </iframe>
+</div>
+

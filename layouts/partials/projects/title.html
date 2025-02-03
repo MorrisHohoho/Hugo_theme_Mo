@@ -1,0 +1,29 @@
+<div id="primarycontent">
+    <center><h1><strong>{{.Params.title}}</strong></h1></center>
+    
+    <center><font size="-0.0"><h2> 
+        {{range .Params.authors}}
+        <a href="{{index . "url"}}">{{index . "name"}}</a>&nbsp;&nbsp;&nbsp;
+        {{end}}
+
+       </h2></font>
+    
+    <center><font size="-1"><h2>
+            {{range .Params.affiliation}}
+            <a href="{{index . "url"}}">{{index . "name"}}</a>&nbsp;&nbsp;&nbsp; 
+            {{end}}
+    </h2></font></center>
+
+    
+    <center><span style="font-size:20px;">{{.Params.conference}}</span></center>
+    <h2><center>
+    {{range $i, $v := .Params.buttons}}
+    {{if $i }}
+    <a href="{{index $v "url"}}">{{index $v "name"}}</a> |
+    {{end}}
+    <a href="{{index $v "url"}}">{{index $v "name"}}</a>
+    {{end}}
+    </h2></center>
+    
+    
+    

@@ -1,7 +1,7 @@
 # Theme Name
 Mo
 ## Features
-It is still in developed.
+Isolation between homepage and projects page.
 ## Installation
 
 ## Configuration

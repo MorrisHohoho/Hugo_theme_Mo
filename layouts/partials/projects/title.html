@@ -17,9 +17,10 @@
     
     <center><span style="font-size:20px;">{{.Params.conference}}</span></center>
     <h2><center>
+
+
     {{range $i, $v := .Params.buttons}}
-    {{if $i }}
-    <a href="{{index $v "url"}}">{{index $v "name"}}</a> |
+    {{if $i }} | 
     {{end}}
     <a href="{{index $v "url"}}">{{index $v "name"}}</a>
     {{end}}

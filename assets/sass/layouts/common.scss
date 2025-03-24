@@ -149,7 +149,7 @@ header {
     .header-item-svg{
         width: 0.8em;
         height: 0.8em;
-        margin-right: 0.2em;
+        // margin-right: 0.2em;
     }
 
     .fancy-link{
@@ -178,4 +178,23 @@ footer {
     &>.footnote {
         text-align: center;
     }
+}
+
+// button
+.header_button{
+    display: inline-block; 
+    *display: inline; 
+    zoom: 1; 
+    vertical-align: top;
+}
+
+.header_button_svg{
+    width: 0.8em;
+    height: 1.2em;
+}
+.header_button_text{
+    margin: 0;
+    border: 0;
+
+    font-size: 0.9rem;
 }
